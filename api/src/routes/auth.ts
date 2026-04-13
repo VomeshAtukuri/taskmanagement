@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express';
 import pool from '../db';
 import { v4 as uuidv4 } from 'uuid';
 
-const router = Router();
+const router = Router() as Router;
 
 router.post('/login', async (req: Request, res: Response) => {
   try {
