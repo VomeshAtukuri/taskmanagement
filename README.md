@@ -56,8 +56,6 @@ Since this is a demonstration, the entire application runs client-side with mock
 - **No Real API**: Would add 20+ endpoints in production (auth, projects, tasks, filters, stats)
 - **Simplified Auth**: Uses plaintext password comparison; production would use bcrypt + JWT signing
 - **No Drag-and-Drop**: Tasks can be edited manually, but no drag-and-drop reordering
-- **No Real-Time**: No WebSocket support for live updates across users
-- **No Pagination**: All data loads at once (fine for small datasets)
 
 ## Running Locally
 
@@ -165,11 +163,6 @@ lib/
 - Task attachments and file uploads
 - Invite team members to projects
 - Real-time updates via WebSockets
-- Notification system
-- Search and advanced filtering
-- Project templates
-- Time tracking per task
-- Custom task fields
 
 ### UI/UX Improvements
 - Dark mode toggle
@@ -180,15 +173,6 @@ lib/
 - Loading skeletons
 - Accessibility improvements (ARIA labels)
 - Smooth animations and transitions
-
-### Testing & DevOps
-- Unit tests with Vitest
-- Integration tests for API endpoints
-- E2E tests with Playwright
-- Docker containerization
-- CI/CD pipeline (GitHub Actions)
-- Error tracking (Sentry)
-- Performance monitoring
 
 ### Security
 - CORS configuration
